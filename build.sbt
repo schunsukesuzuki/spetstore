@@ -45,6 +45,7 @@ libraryDependencies ++= Seq(
   "io.circe"                %% "circe-generic"                  % circeVersion,
   "io.circe"                %% "circe-parser"                   % circeVersion,
   "play-circe" %% "play-circe" % "2.5-0.7.0"
+
 )
 
 routesGenerator := InjectedRoutesGenerator
