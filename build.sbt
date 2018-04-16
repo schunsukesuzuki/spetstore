@@ -24,14 +24,20 @@ libraryDependencies ++= Seq(
   "org.specs2"              %% "specs2-junit"                   % "3.8.9"     % Test,
   "net.codingwell"          %% "scala-guice"                    % "4.1.0",
   "com.github.nscala-time"  %% "nscala-time"                    % "2.16.0",
+  // 2.5.1
   "org.scalikejdbc"         %% "scalikejdbc"                    % "2.5.1",
+  // 2.5.1  3.2.1
   "org.scalikejdbc"         %% "scalikejdbc-test"               % "2.5.1",
+  // 2.5.1
   "org.scalikejdbc"         %% "scalikejdbc-config"             % "2.5.1",
+  // 2.5.+  -scalikejdbc-3.2
   "org.scalikejdbc"         %% "scalikejdbc-play-initializer"   % "2.5.+",
   "org.scalikejdbc"         %% "scalikejdbc-play-dbapi-adapter" % "2.5.+",
   "org.skinny-framework"    %% "skinny-orm"                     % "2.3.5",
-  "com.h2database"          %  "h2"                             % "1.4.187",
-//  "ch.qos.logback"          %  "logback-classic"                % "1.2.1",
+  // 1.4.197
+  "com.h2database"          %  "h2"                             % "1.4.197",
+  // 1.2.3
+//  "ch.qos.logback"          %  "logback-classic"                % "1.2.3",
   //"io.swagger" %% "swagger-play2" % "1.5.1",
   "org.flywaydb"            %% "flyway-play"                    % "3.0.1",
   "mysql"                   % "mysql-connector-java"            % "6.0.5",
@@ -47,9 +53,9 @@ scalariformSettings
 
 flywayUrl := "jdbc:mysql://localhost/spetstore?autoReconnect=true&useSSL=false"
 
-flywayUser := "spetstore"
+flywayUser := "admin"
 
-flywayPassword := "phou8Igh"
+flywayPassword := "admin"
 
 flywayLocations := Seq("filesystem:conf/db/migration/default")
 

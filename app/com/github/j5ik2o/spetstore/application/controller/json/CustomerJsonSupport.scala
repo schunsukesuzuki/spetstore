@@ -2,7 +2,7 @@ package com.github.j5ik2o.spetstore.application.controller.json
 
 import com.github.j5ik2o.spetstore.application.controller.CustomerController
 import com.github.j5ik2o.spetstore.domain.model.basic._
-import com.github.j5ik2o.spetstore.domain.model.customer.{Customer, CustomerConfig, CustomerId, CustomerProfile}
+import com.github.j5ik2o.spetstore.domain.model.customer.{ Customer, CustomerConfig, CustomerId, CustomerProfile }
 import com.github.j5ik2o.spetstore.infrastructure.identifier.IdentifierService
 
 /**

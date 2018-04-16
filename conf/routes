@@ -1,10 +1,24 @@
-# Routes
+#Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
 #GET     /api-docs.json          controllers.ApiHelpController.getResources
 #GET     /api-docs/customers     controllers.ApiHelpController.getResource(path = "/customers")
 #GET     /api-docs/categories    controllers.ApiHelpController.getResource(path = "/categories")
+
+
+
+#An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+
+#Login
+GET     /login                      controllers.LoginController.login
+
+#Signup
+GET     /signup                     controllers.SignupController.signup
+
+POST    /signup                     controllers.SignupController.signupresult
+
 
 # Customer
 POST          /customers                               com.github.j5ik2o.spetstore.application.controller.CustomerController.create
@@ -37,5 +51,5 @@ PUT           /items/:id                               com.github.j5ik2o.spetsto
 DELETE        /items/:id                               com.github.j5ik2o.spetstore.application.controller.ItemController.delete(id: Long)
 
 # Map static resources from the /public folder to the /assets URL path
-#GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file)
 #GET     /swagger.json           controllers.ApiHelpController.getResources
